@@ -1,0 +1,80 @@
+
+.navBlock2{
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+
+.personalInfoBlock1Video{
+    background-color: rgb(189, 211, 68);
+    width: 30em;
+    height: 15em;
+    align-self: center;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.personalInfoBlock1Text{
+    background-color:darksalmon;
+    width: 36em;
+    height: 25em;
+    align-self: center;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+#mainBlockTwo{
+    height: 40%; 
+    background-image: url("/images/calgary_tower.jpg");
+}
+#mainBlockThree{
+    height: 50%; 
+    width: 100%;
+}
+article h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+article p{
+    text-align: start;
+    margin: 2em;
+}
+/*
+----MEDIA QUERIES----
+*/
+
+
+@media screen and (max-width: 590px) {
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    nav
+    {
+        grid-column: 1;
+    }
+   #mainBlockTwo
+   {
+        grid-row: 2;
+    }
+    #mainBlockThree{
+        grid-row: 3;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .personalInfoBlock1Video{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .personalInfoBlock1Text{
+        margin-top: 10px;
+        min-width: 30em;
+        width: 30em;
+        height: 25em;
+        margin-bottom: 10px;
+    }
+
+}
