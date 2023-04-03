@@ -1,43 +1,68 @@
-
 .navBlock2{
     justify-content: center;
     align-items: center;
     gap: 4em;
 }
 
-
 .personalInfoBlock1Video{
     background-color: rgb(189, 211, 68);
     width: 30em;
     height: 15em;
-    align-self: center;
     margin-right: 2em;
     margin-left: 2em;
+    margin-top: 3em;
 }
 
 .personalInfoBlock1Text{
-    background-color:darksalmon;
+    background-color: var(--fifthYellow);
     width: 36em;
     height: 25em;
     align-self: center;
     margin-right: 2em;
     margin-left: 2em;
 }
+nav+div h2{
+    color: var(--fifthYellow);
+    font-family: 'Times New Roman', Times, serif;
+    align-self: center;
+    font-size: 100px;
+}
+#mainBlock{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(7,150px);
+}
+
+#mainBlockOne{
+    height: 100%;
+    grid-row: 1;
+
+}
 
 #mainBlockTwo{
-    height: 40%; 
+    grid-row: 2/5;
+    height: 100%; 
     background-image: url("/images/calgary_tower.jpg");
+    /*
+    Image from: https://www.dreamstime.com/illustration/calgary-tower.html
+    */
 }
 #mainBlockThree{
-    height: 50%; 
+    grid-row: 5/8;
+    height: 100%; 
     width: 100%;
 }
 article h2{
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 article p{
     text-align: start;
     margin: 2em;
+    color: white;
+}
+.hideDisplay{
+    display: none;
 }
 /*
 ----MEDIA QUERIES----
@@ -45,36 +70,47 @@ article p{
 
 
 @media screen and (max-width: 590px) {
-    body
-    {
-        display: flex;
-        flex-direction: column;
-        
+    #mainBlock{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(7,1fr);
     }
-    nav
-    {
-        grid-column: 1;
+    h1{
+        display: none;
     }
-   #mainBlockTwo
-   {
-        grid-row: 2;
+    nav+div h2{
+        font-size: large;
     }
-    #mainBlockThree{
-        grid-row: 3;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+    #mainBlockTwo{
+        grid-row: 2/5;
     }
     .personalInfoBlock1Video{
-        margin-top: 10px;
-        margin-bottom: 10px;
+        grid-row: 5/7;
     }
     .personalInfoBlock1Text{
-        margin-top: 10px;
-        min-width: 30em;
-        width: 30em;
-        height: 25em;
-        margin-bottom: 10px;
+        grid-row: 6;
     }
+    .personalInfoContainer{
+        display: none;
+    }
+    .personalInfoBlock1Video{
+        display: none;
+    }
+    .personalInfoBlock1Text{
+        display: none;
+    }
+    .showPersonalInfoBlock1Text{
+        grid-row: 5;
+    }
+    .showPersonalInfoBlock1Video{
+        grid-row: 6;
+    }
+    #video{
+        height:300;
+        width: 400;
+    }
+
+
+
 
 }

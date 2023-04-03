@@ -70,14 +70,22 @@ section p+p{
     line-height: 1.1;
 }
 #mainBlock{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#mainBlock{
     background-color: var(--mainYellow);
     height: fit-content;
 }
 #mainBlockOne{
+    height: 10%; 
     background-color: var(--mainBlue);
 }
 #mainBlockTwo{
     background-color: white;
+    height: 90%; 
     margin: 2em;
 }
 
@@ -98,6 +106,15 @@ section p+p{
     }
     section li{
         margin-left: 1em;
+    }
+    h1{
+        display: none;
+    }
+    [alt="Intro Page"]{
+        font-size: 15px;
+    }
+    .flexboxItem{
+        font-size: 1px;
     }
     
 

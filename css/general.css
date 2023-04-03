@@ -50,8 +50,8 @@
     --secondaryYellow: rgba(255,226,154,1);
     --tertiaryYellow: rgba(255,217,123,1);
     --fourthYellow: rgba(242,199, 92,1);
+    --fifthYellow: rgba(210,159, 32,1);
 }
-
 
 .navBlock1{
     display: flex;
@@ -111,24 +111,21 @@ a{
     height: 17em;
 }
 
-#mainBlock{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-#mainBlockOne{
-    height: 10%; 
-    width: 100%;
-}
 #mainBlockTwo{
-    height: 90%; 
+    
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (max-width: 590px) {
+    a{
+        font-size: 13px;
+        margin-top: 2em;
+    }
+    h3{
+        display: none;
+    }
     .navBlock1{
         display: flex;
         flex-direction: row;
@@ -151,22 +148,9 @@ a{
         flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .backgroundImage{
-        
-    }
     .flexboxItemNavBlock2{
         display: inline-block;
         padding: 0.50em;
-    }
-    a{
-        font-weight: bold;
-        font-size: 24px;
-        background-color: tomato;
-        color: white;
-        padding: 5px 15px;
-        border-radius: 50px;
-        flex-basis: 8rem;
-        text-align: center;
     }
     .personalInfoContainer{
         display: flex;
@@ -179,7 +163,6 @@ a{
     }
     .personalInfoBlock1Video{
         background-color: rgb(189, 211, 68);
-        width: 21em;
         height: 15em;
         align-self: center;
         margin-right: 2em;
@@ -199,7 +182,6 @@ a{
         width: 100%;
     }
     #mainBlockOne{
-        height: 10%; 
         width: 100%;
     }
     body
@@ -212,12 +194,8 @@ a{
     {
         grid-column: 1;
     }
-   #mainBlockTwo
-    {
-        grid-row: 2;
-    }
+   
     #mainBlockThree{
-        grid-row: 3;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -226,9 +204,10 @@ a{
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    
+    
 }
 
 @media screen and (min-width: 790px) {
-
 
   }
