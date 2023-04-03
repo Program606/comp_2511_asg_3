@@ -45,6 +45,7 @@ grid-template-rows: repeat(7,150px);
     background-image: url("/images/calgary_tower.jpg");
     /*
     Image from: https://www.dreamstime.com/illustration/calgary-tower.html
+    Not for decoration, because I am from there, and that is part of the content
     */
 }
 #mainBlockThree{
