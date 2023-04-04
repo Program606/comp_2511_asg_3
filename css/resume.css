@@ -71,7 +71,6 @@ section p+p{
 }
 #mainBlock{
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -101,6 +100,9 @@ section p+p{
         align-self: center;
         width: 100%;
     }
+    a{
+        font-size: 13px;
+    }
     section p{
         margin-left: 1em;
     }
@@ -121,7 +123,17 @@ section p+p{
 
 }
 
-
-@media screen and (min-width: 790px) {
-  }
+@media screen and (min-width: 590px) {
+    #mainBlock{
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+  
+}
+@media screen and (min-width: 790px){
+    #mainBlock{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
 

@@ -80,9 +80,17 @@
                     <div class="personalInfoBlock1Video">
                         <!-- Picture from the link https://www.nicepng.com/ourpic/u2q8q8w7r5e6q8r5_white-play-png-play-video-icon-white/ -->
                         <video poster="images/preview.test.png" controls width="480" height="340">
-                            <source src="videos/video1.mp4" type="video/mp4">
-                            <source src="videos/video2.webm" type="video/webm">
-                            <source src="videos/video3.ogv" type="video/ogv">
+                            <source src="videos/video1.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="videos/video2.webm" type='video/webm;codecs="vp8, vorbis"'>
+                            <source src="videos/video3.ogv" type='video/ogg;codecs="theora, vorbis"'>
+                            <!-- Resource on implementing  transcritpt-->
+                            <track
+                            label="English"
+                            kind="subtitles"
+                            srclang="en"
+                            src="captions/subtitles"
+                            default
+                            >
                         </video>
                     </div>
 
@@ -102,28 +110,6 @@
 
             
         </div>
-    
-    <!-- Shown Block 3 For Mobile-->
-    <div> 
-                    <!-- <div>
-                        <video id="video" poster="images/preview.test.png" controls>
-                            <source src="videos/video1.mp4" type="video/mp4">
-                            <source src="videos/video2.webm" type="video/webm">
-                            <source src="videos/video3.ogv" type="video/ogv">
-                    </div> -->
-
-                    <!-- <article class="showPersonalInfoBlock1Text">
-                        <h2> GREETINGS HUMAN..</h2>
-                        <p>
-                            Hello! I am Prince Manzano and I am an aspiring Software Developer. I am a BCIS Student
-                            and currently attending Mount Royal University. I am looking forward to meet with you.
-                            If you are looking for my projects, they may be found at the links in the navbar. I love cooking and 
-                            thrift shopping, although sometimes a quick bite at mcdonalds 
-                            
-                        </p>
-                    </article>  -->
-    </div>
-
 
 
 

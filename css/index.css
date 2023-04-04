@@ -20,6 +20,10 @@
     align-self: center;
     margin-right: 2em;
     margin-left: 2em;
+    margin-top: 9em;
+    margin-bottom: 2em;
+    height: 17em;
+    
 }
 nav+div h2{
     color: var(--fifthYellow);
@@ -28,9 +32,9 @@ nav+div h2{
     font-size: 100px;
 }
 #mainBlock{
-display: grid;
-grid-template-columns: repeat(1, 1fr);
-grid-template-rows: repeat(7,150px);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 150px 1fr);
 }
 
 #mainBlockOne{
@@ -38,7 +42,11 @@ grid-template-rows: repeat(7,150px);
     grid-row: 1;
 
 }
-
+.personalInfoContainer{
+    flex-direction: column;
+    grid-row: 5/10;
+    align-items: center;
+}
 #mainBlockTwo{
     grid-row: 2/5;
     height: 100%; 
@@ -48,11 +56,11 @@ grid-template-rows: repeat(7,150px);
     Not for decoration, because I am from there, and that is part of the content
     */
 }
-#mainBlockThree{
+/* #mainBlockThree{
     grid-row: 5/8;
     height: 100%; 
     width: 100%;
-}
+} */
 article h2{
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -74,31 +82,34 @@ article p{
     #mainBlock{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(7,1fr);
+        grid-template-rows: repeat(9, 150px 1fr);
+    }
+    a{
+        font-size: 20px;
     }
     h1{
         display: none;
     }
     nav+div h2{
-        font-size: large;
+        font-size: 50px;
+        text-align: center;
+    }
+    #mainBlockOne{
+        height: 150px;
     }
     #mainBlockTwo{
-        grid-row: 2/5;
+        grid-row: 2/7;
+    }
+    #mainBlockThree{
+        grid-row: 7/19;
     }
     .personalInfoBlock1Video{
         grid-row: 5/7;
     }
     .personalInfoBlock1Text{
         grid-row: 6;
-    }
-    .personalInfoContainer{
-        display: none;
-    }
-    .personalInfoBlock1Video{
-        display: none;
-    }
-    .personalInfoBlock1Text{
-        display: none;
+        margin-top: 7em;
+        height: 22em;
     }
     .showPersonalInfoBlock1Text{
         grid-row: 5;
@@ -114,4 +125,88 @@ article p{
 
 
 
+}
+
+@media screen and (min-width: 791px){
+    #mainBlock{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .personalInfoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: wheat;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navBlock2{
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+    }
+    
+    .personalInfoBlock1Video{
+        background-color: rgb(189, 211, 68);
+        width: 30em;
+        height: 15em;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 3em;
+    }
+    
+    .personalInfoBlock1Text{
+        background-color: var(--fifthYellow);
+        width: 36em;
+        height: 15em;
+        align-self: center;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+    nav+div h2{
+        color: var(--fifthYellow);
+        font-family: 'Times New Roman', Times, serif;
+        align-self: center;
+        font-size: 100px;
+    }
+    #mainBlock{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7,150px);
+    }
+    
+    #mainBlockOne{
+        height: 100%;
+        grid-row: 1;
+    
+    }
+    
+    #mainBlockTwo{
+        grid-row: 2/5;
+        height: 100%; 
+        background-image: url("/images/calgary_tower.jpg");
+        /*
+        Image from: https://www.dreamstime.com/illustration/calgary-tower.html
+        Not for decoration, because I am from there, and that is part of the content
+        */
+    }
+    #mainBlockThree{
+        grid-row: 5/8;
+        height: 100%; 
+        width: 100%;
+
+    }
+    article h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+    article p{
+        text-align: start;
+        margin: 2em;
+        color: white;
+    }
+    .hideDisplay{
+        display: none;
+    }
 }
